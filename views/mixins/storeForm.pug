@@ -1,5 +1,5 @@
 mixin storeForm(store = {})
-	form(action="/add" method="POST" enctype="multipart/form-data" class="card")
+	form(action="/add" method="POST" class="card")
 
 		label(for="name") Name
 		input(type="text" name="name")
@@ -14,4 +14,4 @@ mixin storeForm(store = {})
 					input(type="checkbox" id=choice value=choice name="tags")
 					label(for=choice) #{choice}
 
-		input(type="submit" value="Save" class="button")
+		input(type="submit" value="Save -<" class="button")
